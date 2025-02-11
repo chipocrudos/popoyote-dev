@@ -1,0 +1,15 @@
+---
+import { Icons } from "@utils/icons.ts";
+
+const { name } = Astro.props;
+const currentIcon = Icons[name];
+
+ ---
+
+<img class="icon" src={currentIcon.assets} alt={currentIcon.name}/>
+ 
+<style>
+    .icon {
+        color: {currentIcon.color};
+    } 
+</style>

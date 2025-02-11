@@ -1,0 +1,28 @@
+---
+import Navbar from "@components/page/Navbar.astro";
+import "@styles/global.css";
+import popoyoteLogo from "../assets/popoyote-dev.svg";
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href={popoyoteLogo.src} />
+
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<header>
+			<Navbar active={pageTitle} />
+		</header>
+		<main>
+			<slot />
+		</main>
+
+		<!-- <Footer /> -->
+	</body>
+</html>

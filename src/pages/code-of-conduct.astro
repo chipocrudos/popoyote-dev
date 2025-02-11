@@ -1,0 +1,59 @@
+---
+import Title from "@components/common/Title.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icons } from "@utils/icons.ts";
+
+const pageTitle = "Código de conducta";
+const telegram = Icons["telegram"];
+const github = Icons["github"];
+---
+
+<Layout pageTitle={pageTitle}>
+    <section class="commun">
+        <Title text="Código de conducta" />
+        <article>
+            <p>
+                Los organizadores de Popoyote-Dev, nos comprometemos a mantener
+                un entorno sin abusos para todo el mundo, sin importar sexo,
+                identidad u orientación sexuales, discapacidad, aspecto físico,
+                edad, raza, nacionalidad o creencias religiosas. No toleraremos
+                el acoso a miembros de la comunidad bajo ningún concepto, ni
+                siquiera en chiste. Los participantes que violen estas reglas
+                pueden ser sancionados o expulsados de la comunidad y los
+                eventos de la misma, a discreción de los organizadores de
+                Popoyote-Dev. Las formas de acoso incluyen comentarios
+                ofensivos, orales o escritos, relacionados con sexo, identidad u
+                orientación sexuales, discapacidades, aspecto físico, edad,
+                raza, nacionalidad o creencias religiosas, intimidación,
+                amenazas, persecución, acecho, fotografías o grabaciones
+                abusivas, y atenciones sexuales no gratas. Los patrocinadores y
+                presentadores están también sujetos al código de conducta.
+            </p>
+            <p>
+                Si un miembro de la comunidad mostrara cualquier conducta
+                abusiva, los organizadores de Popoyote-Dev pueden tomar
+                cualquier acción que crean apropiada, incluyendo llamarle la
+                atención o expulsarlo de la comunidad y los eventos de la misma.
+                Si eres víctima de conductas abusivas, ves a otra persona que
+                está siendo acosada, o tienes dudas, por favor contacta al
+                equipo organizador inmediatamente. Queda estrictamente prohibido
+                hablar sobre temas fuera del ámbito tecnológico en el
+                <a class="btn-link" href={telegram.url}>grupo de Telegram</a>,
+                como política, religión, economía, etc. El rango de discusión
+                aún es muy amplio ya que no sólo se limita a un lenguaje de
+                programación, sino que puede ir desde el Back-end en general
+                hasta tecnologías Front-end, automatización, Cloud, IA,
+                educación, etc.
+            </p>
+            <p>
+                Nuestro repositorio de código se encuentra en <a
+                    class="btn-link"
+                    href={github.url}>{github.name}</a
+                >, por lo que también se aplican las normas de conducta de la
+                comunidad. Puedes consultar nuestros desarrollos, integrantes y
+                el trabajo colaborativo de popoyote-dev en el siguiente enlace:
+                <a class="btn-link" href={github.url}>{github.name}</a>
+            </p>
+        </article>
+    </section>
+</Layout>
