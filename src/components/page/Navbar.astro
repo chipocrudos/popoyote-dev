@@ -1,0 +1,22 @@
+---
+import { navBarLinks } from "@utils/navigation.ts";
+const { active } = Astro.props;
+---
+
+<nav class="navbar">
+    <span>Popoyote-Dev</span>
+    <ul>
+        {
+            navBarLinks.map((link) => (
+                <li>
+                    <a
+                        class={link.name == active ? "active" : ""}
+                        href={link.url}
+                    >
+                        {link.name}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>

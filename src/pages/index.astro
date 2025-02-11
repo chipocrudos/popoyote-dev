@@ -1,0 +1,53 @@
+---
+import Button from "@components/common/Button.astro";
+import Icon from "@components/common/Icon.astro";
+import Title from "@components/common/Title.astro";
+import Layout from "@layouts/Layout.astro";
+import popoyoteLogo from "../assets/popoyote-dev.svg";
+const pageTitle = "Inicio";
+---
+
+<Layout pageTitle={pageTitle}>
+	<section class="about">
+		<article>
+			<Title text="Comunidad de desarrolladores" />
+		</article>
+		<img src={popoyoteLogo.src} alt="Popoyote Logo" />
+	</section>
+
+	<section class="contact">
+		<Title text="¿Qué es el popoyote?" />
+		<p>
+			El popoyote es un pez endemico de San critóbal de las casas,
+			Chiapas, México. Es un pez que se encuentra en peligro de extinción.
+		</p>
+		<p>
+			Si es de su interes puede obtener mas información en la página web
+			del <a
+				href="https://www.ecosur.mx/popoyote-el-pequeno-carnivoro-en-peligro-de-extincion/"
+				title="Popoyote, el pequeño carnívoro en peligro de extinción"
+				target="_blank">ECOSUR</a
+			>
+		</p>
+	</section>
+
+	<section class="contact">
+		<Title text="¿A quien va dirigido?" />
+		<p>
+			Desarrolladores o entuciasta por la pogramación general, recuros
+			tecnológicos, etc. puedes unirte a nuestro grupo de telegram y
+			compartir tus conocimientos.
+		</p>
+	</section>
+
+	<section class="contact">
+		<Title text="Unete a nuestra comunidad" />
+		<Button
+			className="btn btn-primary"
+			link="https://t.me/+6L0rqhl9rvtmNTQz"
+			message="Unirme al grupo"
+		>
+			<Icon name="telegram" />
+		</Button>
+	</section>
+</Layout>
