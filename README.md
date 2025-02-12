@@ -24,9 +24,13 @@ pnpm run dev
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
+├── public
+│   ├── og-popoyote-dev.png
+│   └── popoyote-dev.png
 ├── src
 │   ├── assets
 │   │   ├── github.svg
+│   │   ├── opengrap-image.svg
 │   │   ├── popoyote-dev.svg
 │   │   └── telegram.svg
 │   ├── components
