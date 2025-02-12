@@ -20,7 +20,6 @@ export type OpenGraph = {
     image: string;
     title: string;
     description: string;
-    url: string;
+    domain: string;
     locale: string;
-    twitter: string;
 }
