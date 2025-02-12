@@ -1,9 +1,8 @@
 import type { OpenGraph } from "./types";
 
-import popoyoteLogo from "@assets/popoyote-dev.svg";
 
 export const OpenGraphSite: OpenGraph = {
-    image: popoyoteLogo.src,
+    image: "public/og-popoyote-dev.png",
     title: "Popoyote Dev",
     description: "Comunidad de desarroladores, San Cristóbal de Las Casas, Chiapas",
     url: "popoyote.dev",
