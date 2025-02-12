@@ -1,16 +1,17 @@
 ---
 import { OpenGraphSite } from "@utils/opengraph";
+const site = `https://${OpenGraphSite.domain}`;
 const ogImage = Astro.props?.ogImage || OpenGraphSite.image;
 const ogTitle = Astro.props?.ogTitle || OpenGraphSite.title;
 const ogDescription = Astro.props?.ogDescription || OpenGraphSite.description;
-const ogUrl = Astro.props?.ogUrl || `https://${OpenGraphSite.domain}`;
+const ogUrl = Astro.props?.ogUrl || site;
 const ogLocale = Astro.props?.ogLocale || OpenGraphSite.locale;
 ---
 
 <meta property="og:title" content={ogTitle} />
 <meta property="og:type" content="article" />
 <meta property="og:url" content={ogUrl} />
-<meta property="og:image" content={ogImage} />
+<meta property="og:image" content=`${site}${ogImage}` />
 <meta property="og:description" content={ogDescription} />
 <meta property="og:locale" content={ogLocale} />
 <meta property="og:site_name" content={OpenGraphSite.title} />
@@ -20,6 +21,6 @@ const ogLocale = Astro.props?.ogLocale || OpenGraphSite.locale;
 <meta property="twitter:url" content={ogUrl} />
 <meta name="twitter:title" content={ogTitle} />
 <meta name="twitter:description" content={ogDescription} />
-<meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image" content=`${site}${ogImage}` />
 
-<meta name="description" content={ogDescription.description} />
+<meta name="description" content={ogDescription} />
