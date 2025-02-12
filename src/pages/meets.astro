@@ -2,9 +2,10 @@
 import Title from "@components/common/Title.astro";
 import Layout from "@layouts/Layout.astro";
 const pageTitle = "Reuniones";
+const ogDescription = "Alcanance y organización de las reuniones periodicas";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} ogTitle={pageTitle} ogDescription={ogDescription}>
     <section class="commun">
         <Title text="Reuniones" />
         <article>
@@ -15,6 +16,39 @@ const pageTitle = "Reuniones";
                 reuniones son abiertas a todo público, por lo que si te interesa
                 la programación, la tecnología, o simplemente quieres aprender
                 algo nuevo, ¡no dudes en unirte!
+            </p>
+        </article>
+    </section>
+    <section class="commun">
+        <Title text="Formato de reuniones presenciales" />
+        <article>
+            <p>
+                <h2>Orden del día</h2>
+                <h3>Bienvenida</h3>
+                <h3>Presentación de charlas</h3>
+
+                <ul class="list-meets">
+                    <li>Se presentaran maximo 2 charlas por día.</li>
+                    <li>Duración aproximada de 30 minutos.</li>
+                    <li>Preguntas 10 minutos.</li>
+                </ul>
+                <h4>Receso de 15 minutos</h4>
+                <h3>Taller</h3>
+                <ul class="list-meets">
+                    <li>
+                        En caso de presentarse un taller se propone una diración
+                        mazima de 1 hora
+                    </li>
+                </ul>
+                <h3>Despedida y cierre de sesión</h3>
+                <h3>Charla abierta</h3>
+                <ul class="list-meets">
+                    <li>Duración abierta</li>
+                    <li>
+                        Los temas a tratar tendran que se relacionados con el
+                        interes del grupo
+                    </li>
+                </ul>
             </p>
         </article>
     </section>

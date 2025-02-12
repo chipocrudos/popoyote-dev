@@ -1,8 +1,10 @@
 ---
+import OpenGraph from "@components/common/OpenGraph.astro";
 import Navbar from "@components/page/Navbar.astro";
 import "@styles/global.css";
 import popoyoteLogo from "../assets/popoyote-dev.svg";
-const { pageTitle } = Astro.props;
+const { pageTitle, ogImage, ogTitle, ogDescription } = Astro.props;
+const ogUrl = Astro.url;
 ---
 
 <!doctype html>
@@ -14,6 +16,13 @@ const { pageTitle } = Astro.props;
 
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+
+		<OpenGraph
+			ogImage={ogImage}
+			ogTitle={ogTitle}
+			ogDescription={ogDescription}
+			ogUrl={ogUrl}
+		/>
 	</head>
 	<body>
 		<header>
