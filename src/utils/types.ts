@@ -15,3 +15,12 @@ export type Icon = {
     url: string;
     color: string;
 };
+
+export type OpenGraph = {
+    image: string;
+    title: string;
+    description: string;
+    url: string;
+    locale: string;
+    twitter: string;
+}

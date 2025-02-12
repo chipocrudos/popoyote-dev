@@ -4,11 +4,14 @@ import Layout from "@layouts/Layout.astro";
 import { Icons } from "@utils/icons.ts";
 
 const pageTitle = "Código de conducta";
+const ogDescription =
+    "Código de conducta dentro de la comunidad en reuniones presenciales o de manera virtual";
+
 const telegram = Icons["telegram"];
 const github = Icons["github"];
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} ogTitle={pageTitle} ogDescription={ogDescription}>
     <section class="commun">
         <Title text="Código de conducta" />
         <article>
@@ -46,7 +49,7 @@ const github = Icons["github"];
                 educación, etc.
             </p>
             <p>
-                Nuestro repositorio de código se encuentra en <a
+                Nuestro repositorio se encuentra en <a
                     class="btn-link"
                     href={github.url}>{github.name}</a
                 >, por lo que también se aplican las normas de conducta de la

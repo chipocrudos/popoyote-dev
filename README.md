@@ -3,7 +3,7 @@
 
 ## Clone:
 ```
-git clone https://github.com/slydragonn/minimalist-dragon.git
+git clone git@github.com:popoyote-dev/popoyote-dev.git
 ```
 
 ## Install:
@@ -24,7 +24,6 @@ pnpm run dev
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
-├── public
 ├── src
 │   ├── assets
 │   │   ├── github.svg
@@ -34,6 +33,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   ├── common
 │   │   │   ├── Button.astro
 │   │   │   ├── Icon.astro
+│   │   │   ├── OpenGraph.astro
 │   │   │   ├── Social.astro
 │   │   │   └── Title.astro
 │   │   └── page
@@ -55,12 +55,14 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── utils
 │       ├── icons.ts
 │       ├── navigation.ts
+│       ├── opengraph.ts
 │       └── types.ts
-├── LICENSE
-├── README.md
 ├── astro.config.mjs
+├── CNAME
+├── LICENSE
 ├── package.json
 ├── pnpm-lock.yaml
+├── README.md
 └── tsconfig.json
 ```
 
